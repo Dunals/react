@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>free templates for everyone</title>
+<!-- </link> -->
+<style>@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    * {margin: 0px;box-sizing: border-box;font-family: "Ubuntu", sans-serif;;}
+    a{text-decoration: none;color: #000000}
+    .navbar {width: 100%;padding-left: 20px;height: 70px; display: flex;align-items: center;background-color: #010409;justify-content: space-around;position: sticky;top: 0;z-index: 1000; }
+    .nav-title span a {color: #fff;font-size: 1.5rem;}
+    .hamburgerMenu {display: none;}
+    .links {font-size: 18px;}.links a {color: #fff;text-decoration: none;padding: 13px 10px 13px 10px;}
+    .links a:hover {background-color: #010409;}#hamburger {display: none;}
+    a{text-decoration: none;color: #fff;}
+    @media (max-width:600px) {
+        .navbar {justify-content: space-between;}
+        .hamburgerMenu {display: block;margin-right: 20px;}
+        .hamburgerMenu label {display: inline-block;cursor: pointer;padding: 13px;height: 50px;width: 50px;}
+        .hamburgerMenu label:hover,.navbar #hamburger:checked~.hamburgerMenu>label {background-color: #010409;}
+        .hamburgerMenu label div { border-top: 2px solid #fff; display: block; height: 10px; width: 25px;}
+        .links {border-top: 1px solid #010409;background-color: #010409;transition: all 0.3s;overflow-y: hidden;position: absolute;display: block;width: 100%;height: 0px;top: 50px;left: 0px;}
+        .links a {display: block;width: 100%;}#hamburger:not(:checked)~.links {height: 0px;}#hamburger:checked~.links {height: calc(100vh - 50px);}
+        .container {width: 99% !important; }
+    }
+    body{background-color: #202124; color: #fff;}
+    .container {width: 80%;margin: 0 auto;padding: 20px; }
+    
+    h1{margin-top: 30px; margin-bottom: 30px; font-size: 30px;}
+    .p{margin-bottom: 30px;margin-top: 3px; text-align: center;}
+    .p1{margin-bottom: 30px;margin-top: 35px;}
+    .search {
+        --input-line: #cccccc;
+        --input-text-color: #808080;
+        --input-text-hover-color: transparent;
+        --input-border-color: #808080;
+        --input-border-hover-color: #999999;
+        --input-bg-color: #010409;
+        --border-radius: 5px;
+        --transition-cubic-bezier: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .search-box {
+        width: 80%;
+        height: 45px; /* Increased from 35px */
+        border: 1px solid var(--input-border-color);
+        border-radius: var(--border-radius);
+        padding: 5px 15px;
+        background: var(--input-bg-color);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transition: var(--transition-cubic-bezier);
+        max-width: var(--search-max-width); 
+        margin-bottom: 40px;
+      }
+      
+      .search-box:hover {
+        border-color: var(--input-border-hover-color);
+      }
+      
+      /* Section input */
+      .search-field {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: -5px;
+        border: 0;
+      }
+      
+      .input {
+        width: calc(100% - 29px);
+        height: 100%;
+        border: 0;
+        border-color: transparent;
+        font-size: 1rem;
+        padding-right: 0px;
+        color: var(--input-line);
+        background: var(--input-bg-color);
+        border-right: 2px solid var(--input-border-color);
+        outline: none;
+      }
+      
+      .input::-webkit-input-placeholder {
+        color: var(--input-text-color);
+      }
+      
+      .input::-moz-input-placeholder {
+        color: var(--input-text-color);
+      }
+      
+      .input::-ms-input-placeholder {
+        color: var(--input-text-color);
+      }
+      
+      .input:focus::-webkit-input-placeholder {
+        color: var(--input-text-hover-color);
+      }
+      
+      .input:focus::-moz-input-placeholder {
+        color: var(--input-text-hover-color);
+      }
+      
+      .input:focus::-ms-input-placeholder {
+        color: var(--input-text-hover-color);
+      }
+      
+      /* Search button */
+      .search-box-icon {
+        width: 52px;
+        height: 45px; /* Increased from 35px */
+        position: absolute;
+        top: -6px;
+        right: -21px;
+        background: transparent;
+        border-bottom-right-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
+        transition: var(--transition-cubic-bezier);
+      }
+      
+      .search-box-icon:hover {
+        background: var(--input-border-color);
+      }
+      
+      .btn-icon-content {
+        width: 52px;
+        height: 45px; /* Increased from 35px */
+        top: -6px;
+        right: -21px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        border-bottom-right-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
+        transition: var(--transition-cubic-bezier);
+        opacity: .4;
+      }
+      
+      .btn-icon-content:hover {
+        opacity: .8;
+      }
+      
+      .search-icon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 12px; /* Adjusted for new height */
+        right: 10px;
+      }
+      
+      /* Media Queries */
+      @media (max-width: 768px) {
+        .search-box {
+          height: 40px; /* Adjust height for medium screens */
+        }
+      
+        .search-box-icon, .btn-icon-content {
+          height: 40px; /* Adjust height for medium screens */
+        }
+      
+        .search-icon {
+          top: 10px; /* Adjust position for medium screens */
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .search-box {
+          height: 35px; /* Adjust height for small screens */
+        }
+      
+        .search-box-icon, .btn-icon-content {
+          height: 35px; /* Adjust height for small screens */
+        }
+      
+        .search-icon {
+          top: 8px; /* Adjust position for small screens */
+        }
+      }
+    
+    
+    
+      
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      
+      .grid-item {
+        background-color: #1e1e1e;
+        padding: 10px;
+        border-radius: 8px;
+        /* text-align: center; */
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      
+      .grid-item:hover {
+        opacity: 0.85;
+        border: 1px solid #505153;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      }
+      
+      .grid-item img {
+        max-width: 100%;
+        height: 200px;
+        border-radius: 2px;
+        transition: opacity 0.3s;
+      }
+      
+      .grid-item:hover img {
+        opacity: 0.8;
+      }
+      
+      .info {
+        margin-top: 10px;
+      }
+      
+      .info h3 {
+        margin: 10px 0 5px;
+        font-size: 1.2em;
+      }
+      
+      .info .author {
+        margin: 0;
+        color: #aaa;
+        font-size: 0.9em;
+      }
+      
+      
+      
+      /* Media Queries */
+      @media (max-width: 1200px) {
+        .grid-container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      
+      @media (max-width: 992px) {
+        .grid-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+      }
+      
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+      }
+      
+      .spinner {
+        --size: 30px;
+        --color: white;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+      }
+      
+      .spinner::after,
+      .spinner::before {
+        box-sizing: border-box;
+        position: absolute;
+        content: "";
+        width: var(--size);
+        height: var(--size);
+        top: 50%;
+        animation: up 2.4s cubic-bezier(0,0, 0.24, 1.21) infinite;
+        left: 50%;
+        background: var(--color);
+        box-shadow: 0 0 calc(var(--size) / 3) rgba(0, 0, 0, 0.25);
+      }
+      
+      .spinner::after {
+        background: var(--color);
+        top: calc(50% - var(--size));
+        left: calc(50% - var(--size));
+        animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+      }
+      
+      @keyframes down {
+        0%,
+        100% {
+          transform: none;
+        }
+      
+        25% {
+          transform: translateX(100%);
+        }
+      
+        50% {
+          transform: translateX(100%) translateY(100%);
+        }
+      
+        75% {
+          transform: translateY(100%);
+        }
+      }
+      
+      @keyframes up {
+        0%,
+        100% {
+          transform: none;
+        }
+      
+        25% {
+          transform: translateX(-100%);
+        }
+      
+        50% {
+          transform: translateX(-100%) translateY(-100%);
+        }
+      
+        75% {
+          transform: translateY(-100%);
+        }
+      }
+    
+    
+    
+    
+      .img img {
+        width: 90%;
+        max-width: 600px; /* Set the maximum width of the image */
+        height: auto;
+    }
+    
+    /* Media queries for responsiveness */
+    
+    /* Small devices (phones, 600px and down) */
+    @media (max-width: 600px) {
+        .img img {
+            max-width: 100%;
+        }
+    
+    
+    }
+    
+    /* Medium devices (tablets, 768px and down) */
+    @media (max-width: 768px) {
+        .img img {
+            max-width: 80%;
+        }
+    
+    }
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media (min-width: 992px) {
+        .img img {
+            max-width: 70%;
+        }
+    
+     
+    }
+    
+    
+    
+    .card {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+        background-color: #010409;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    
+    .top {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+    
+    .circle {
+        padding: 0 4px;
+    }
+    
+    .circle2 {
+        display: inline-block;
+        align-items: center;
+        width: 10px;
+        height: 10px;
+        padding: 1px;
+        border-radius: 5px;
+    }
+    
+    .red {
+        background-color: #ff605c;
+    }
+    
+    .yellow {
+        background-color: #ffbd44;
+    }
+    
+    .green {
+        background-color: #00ca4e;
+    }
+    
+    .header {
+        margin: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    
+    #title2 {
+        color: white;
+        padding-left: 50px;
+        font-size: 15px;
+        margin-top: 4px;
+    }
+    
+    .code-container {
+        position: relative;
+        padding: 10px;
+        background-color: #2d2d2d;
+        border-radius: 5px;
+        overflow: auto;
+        max-height: 400px; /* Set a specific max height to enable the scrollbar */
+    }
+    
+    /* Custom Scrollbar Styling */
+    .code-container::-webkit-scrollbar {
+        width: 10px; /* Width of the scrollbar */
+    }
+    .code-container::-webkit-scrollbar-track {
+        background: #24233b; /* Color of the track */
+        border-radius: 5px; /* Rounded corners */
+    }
+    
+    .code-container::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the thumb */
+        border-radius: 5px; /* Rounded corners */
+    }
+    
+    .code-container::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Color of the thumb on hover */
+    }
+    
+    
+    /* Prism.js specific styling */
+    code[class*="language-"], pre[class*="language-"] {
+        color: white;
+        background: none;
+        text-shadow: none;
+        font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        font-size: 1em;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        line-height: 1.5;
+        tab-size: 4;
+        hyphens: none;
+    }
+    
+    pre[class*="language-"] {
+        padding: 1em;
+        margin: 0.5em 0;
+        overflow: auto;
+        border-radius: 0.3em;
+    }
+    
+    :not(pre) > code[class*="language-"],
+    pre[class*="language-"] {
+        background: #2d2d2d;
+    }
+    .copy-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    .copy-btn:hover {
+        background-color: #45a049;
+    }
+    
+    .copy-message {
+        display: none;
+        top: 50px;
+        right: 10px;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+        padding: 6px;
+        z-index: 2;
+        font-size: 14px;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+        transition: opacity 0.5s ease-in-out;
+    }
+    @media (max-width: 600px) {
+        .card {
+            width: 90% !important;
+        }
+    
+    
+    }
+    
+    /* Medium devices (tablets, 768px and down) */
+    @media (max-width: 768px) {
+        .card{
+           width: 90% !important;
+        }
+    
+    }
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media (min-width: 992px) {
+        .card {
+            max-width: 90% !important;
+        }
+    
+     
+    }
+    .button button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #3d405b;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 17px;
+        padding: 16px;
+        width: 130px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        margin-top: 30px;
+       }
+       
+     .button  button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+       }
+       
+     .button  button span:after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -15px;
+        transition: 0.5s;
+       }
+       
+      .button button:hover span {
+        padding-right: 15px;
+       }
+       
+      .button button:hover span:after {
+        opacity: 1;
+        right: 0;
+       }
+       </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="hamburger">
+            <div>
+                <div class="nav-title">
+                    <span><a href="">AutoDealersUsa</a></span>
+                </div>
+            </div>
+            <div class="hamburgerMenu">
+              <label for="hamburger">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+              </label>
+            </div>
+               <div class="links">
+                   <a href="">Home</a>
+                   <!-- <a href="#">Submit a Template</a> -->
+                   <a href="#">Contact Us</a>
+                   <a href="#">Log in</a>
+               </div>
+            </nav>
+      </header>
+    
+    <center><h1 class="mt-5 h1">Create Website with Login & Registration Form in HTML CSS and JavaScript</h1>
+    <div class="img">
+    <img src="https://www.codingnepalweb.com/wp-content/uploads/2023/08/Create-Website-with-Login-Registration-Form-in-HTML-CSS-and-JavaScript.jpg" alt="">
+    </div>
+    <div class="button">
+    <a href="https://dunals.github.io/Auto-Dealers/" target="_blank"><button>
+        <span>PREVIEW</span>
+      </button>
+    </a> 
+    </div>
+    </center>
+    <p class="container p">To start, add the following HTML codes to your index.html file</p>
+
+    <div class="card">
+        <div class="header">
+            <div class="top">
+                <div class="circle">
+                    <span class="red circle2"></span>
+                </div>
+                <div class="circle">
+                    <span class="yellow circle2"></span>
+                </div>
+                <div class="circle">
+                    <span class="green circle2"></span>
+                </div>
+                <div class="title">
+                    <p id="title2">index.html</p>
+                </div>
+            </div>
+        </div>
+        <div class="code-container">
+            <button class="copy-btn" onclick="copyToClipboard(this.parentNode)">Copy</button>
+            <div class="copy-message">Copy successful!</div>
+            <pre><code id="code" class="language-html">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+        &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;p&gt;This is a sample HTML document.&lt;/p&gt;
+    
+        &lt;script src="script.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code></pre>
+        </div>
+    </div>
+
+
+<p class="container p">Next, add the following CSS codes to your style.css</p>
+    <div class="card">
+        <div class="header">
+          <div class="top">
+            <div class="circle">
+              <span class="red circle2"></span>
+            </div>
+            <div class="circle">
+              <span class="yellow circle2"></span>
+            </div>
+            <div class="circle">
+              <span class="green circle2"></span>
+            </div>
+            <div class="title">
+              <p id="title2">style.css</p>
+            </div>
+          </div>
+        </div>
+        <div class="code-container">
+            <button class="copy-btn" onclick="copyToClipboard(this.parentNode)">Copy</button>
+            <div class="copy-message">Copy successful!</div>
+            <pre><code id="code" class="language-css">
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.copy-btn:hover {
+    background-color: #45a049;
+}
+
+.copy-message {
+    display: none;
+    /* position: absolute; */
+    top: 50px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 2;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+</code>
+            </pre>
+        </div>
+
+      </div>
+      
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="container">
+        <p class="p1">releted post</p>
+    <div class="grid-container">
+      <a href="1.html" class="grid-link">
+          <div class="grid-item">
+              <img src="https://www.codingnepalweb.com/wp-content/uploads/2023/08/Create-Website-with-Login-Registration-Form-in-HTML-CSS-and-JavaScript.jpg" alt="Image 1">
+              <div class="info">
+                  <h3>Create Website with Login & Registration Form in HTML CSS and JavaScript</h3>
+                  <!-- <p class="author">Welcome to our collection of the best and most beautiful Squarespace jewelry templates to give your business a stunning new online home. It doesn't matter if you're after a minimalist… -->
+                </p>
+              </div>
+          </div>
+      </a>
+      <a href="ss2.html" class="grid-link">
+          <div class="grid-item">
+              <img src="https://framerusercontent.com/images/Afk4Liyva1OKyeAaLcser1mWKc.jpg?scale-down-to=512" alt="Image 2">
+              <div class="info">
+                  <h3>CallumHayes</h3>
+                  <p class="author">Maria Kovalevich</p>
+              </div>
+          </div>
+      </a>
+      <a href="ss3.html" class="grid-link">
+          <div class="grid-item">
+              <img src="https://framerusercontent.com/images/ViDTL77f6ldGpJpbnUid4hCrCw.jpg?scale-down-to=512" alt="Image 3">
+              <div class="info">
+                  <h3>Monks Meet</h3>
+                  <p class="author">Design Monks</p>
+              </div>
+          </div>
+      </a>
+      
+      <!-- Add more grid items as needed -->
+  </div>
+  <div class="overlay">
+    <div class="spinner"></div>
+  </div>
+  </section>
+<script>
+  const gridLinks = document.querySelectorAll('.grid-link');
+const spinner = document.querySelector('.spinner');
+const overlay = document.querySelector('.overlay');
+
+gridLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    overlay.style.display = 'block';
+    spinner.style.display = 'block';
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 3500);
+  });
+});
+
+spinner.addEventListener('animationend', () => {
+  overlay.style.display = 'none';
+  spinner.style.display = 'none';
+});
+
+
+function copyToClipboard(container) {
+    const codeElement = container.querySelector('code');
+    const range = document.createRange();
+    range.selectNodeContents(codeElement);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    try {
+        const successful = document.execCommand('copy');
+        const msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Copy command was ' + msg);
+
+        // Show the copy success message
+        if (successful) {
+            const copyMessage = container.querySelector('.copy-message');
+            copyMessage.style.display = 'block';
+            copyMessage.style.opacity = 1;
+
+            // Hide the message after 2 seconds
+            setTimeout(() => {
+                copyMessage.style.opacity = 0;
+                setTimeout(() => copyMessage.style.display = 'none', 500);
+            }, 2000);
+        }
+    } catch (err) {
+        console.log('Oops, unable to copy');
+    }
+
+    // Clear the selection
+    selection.removeAllRanges();
+}
+
+
+</script> 
+<!-- <script src="script.js"></script> -->
+
+      </body>
+      </html>
